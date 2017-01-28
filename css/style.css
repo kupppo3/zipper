@@ -1,0 +1,719 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab|Suez+One|Cormorant+SC');
+
+/*
+font-family: 'Suez One', serif;
+font-family: 'Roboto Slab', serif;
+*/
+* {
+	margin: 0; /* отступ внешний, ниже внутренний*/
+	padding: 0;
+	outline: none; /*Подсветка строки ввода синим свечением 0 значит нету*/
+
+}
+
+html {height: 100%}
+
+body {
+	width: 100%;
+	height: 100%;
+	background-color: #f6f6f6;
+	color: #333;
+	font-family: "Segoe UI", Arial, sans-serif; /* какой текст будет присутствовать на сайте, эти 3 самые популярные */
+	line-height: 135%;
+	/*background-image: url("/img/p2.jpg"); раскоментировать это и отредактировать, чтобы был задний фон на главной(НУЖНА КАРТИНКА)*/
+}
+
+
+img {
+	max-width: 100%;  /* чтобы все изображения не выходили за рамки */
+	height: auto;
+	width: auto\9; /*ie8*/
+	-moz-transition: all 3s ease-out;
+	-o-transition: all 3s ease-out;
+	-webkit-transition: all 3s ease-out;
+}
+
+hr {
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
+}
+
+a {
+	color: #fa713e;
+	text-decoration: none; /* подчеркивание */
+	-webkit-transition: all.6s ease; /* ссылки будут медленно менять свой цвет сафари */
+	-moz-transition: all.6s ease; /* мозила */
+	-o-transition: all.6s ease; /* опера */
+	-ms-transition: all.6s ease; /* ну понятно */
+	transition: all.6s ease; /* для всех остальных */
+
+}
+
+a:hover {
+	color: #c34f25;
+	text-decoration: none; /* подчеркивание */
+	-webkit-transition: all.6s ease; /* ссылки будут медленно менять свой цвет сафари */
+	-moz-transition: all.6s ease; /* мозила */
+	-o-transition: all.6s ease; /* опера */
+	-ms-transition: all.6s ease; /* ну понятно */
+	transition: all.6s ease; /* для всех остальных */
+}
+
+a, a:hover {
+	-webkit-transition: all.6s ease; /* ссылки будут медленно менять свой цвет сафари */
+	-moz-transition: all.6s ease; /* мозила */
+	-o-transition: all.6s ease; /* опера */
+	-ms-transition: all.6s ease; /* ну понятно */
+	transition: all.6s ease; /* для всех остальных */
+}
+.clear {
+	clear: both; /* отделяет строку */
+}
+
+		/*Стили для шапки*/
+@media (min-width: 950px) {
+	header {
+		width: 98%;
+		float: left; /* позиция */
+		padding: 1%; /* добавляет по бокам, надо распределять вместе с виднт(1) чтобы не вылезало за экран 98 - 2(1 лево право) */
+		background-color: white;
+		border-bottom: 2px solid silver;
+		margin-bottom: 20px;
+		font-family: 'Cormorant SC', serif;
+
+	}
+
+	#main {
+
+	}
+
+
+
+}
+	@media (max-width: 949px) and (min-width: 525px){
+		header {
+			width: 98%;
+			float: left; /* позиция */
+			padding: 1%; /* добавляет по бокам, надо распределять вместе с виднт(1) чтобы не вылезало за экран 98 - 2(1 лево право) */
+			background-color: #fafafa;
+			border-bottom: 2px solid silver;
+
+			margin-bottom: 0.1px;
+			font-family: 'Cormorant SC', serif;
+
+		}
+
+		#main {
+
+		}
+
+	}
+@media (max-width: 1024px) {
+	header {
+		width: 98%;
+		float: left; /* позиция */
+		padding: 1%; /* добавляет по бокам, надо распределять вместе с виднт(1) чтобы не вылезало за экран 98 - 2(1 лево право) */
+		background-color: #fafafa;
+		border-bottom: 2px solid silver;
+
+		margin-bottom: 0.1px;
+		font-family: 'Cormorant SC', serif;
+
+	}
+	#main {
+
+
+	}
+
+
+}
+
+@media (max-width: 524px) {
+	header {
+		width: 98%;
+		float: left; /* позиция */
+		padding: 1%; /* добавляет по бокам, надо распределять вместе с виднт(1) чтобы не вылезало за экран 98 - 2(1 лево право) */
+		background-color: #fafafa;
+		border-bottom: 2px solid silver;
+
+		margin-bottom: 0.1px;
+		font-family: 'Cormorant SC', serif;
+	}
+	#main {
+
+	}
+
+
+
+}
+
+#phones {
+	width: 15%;
+	font-size: 1.6em;
+	float: right;
+	line-height: 1.2em;
+	display: inline;
+	padding: 10px;
+}
+
+#trubka {
+	width: 0.3%;
+	font-size: 2.4em;
+	float: right;
+	padding: 25px;
+	color: green;
+}
+
+
+
+
+header #main {
+	text-align: center;
+	width: 90%;
+	font-size: 4em;
+	display: inline;
+}
+
+
+header #main a {
+	color: #939393;
+
+}
+
+header #main a:hover {
+	color: #bebebe;
+}
+
+header #main span {
+	color: #e36565
+}
+
+
+
+
+#metro {
+	float: left;
+	font-size: 1.2em;
+	padding: 10px;
+}
+
+
+header #about {
+	width: 12%;
+	float: left;
+
+}
+
+header #about a {
+	color: #ffb14d;
+	font-size: 2.5em;
+
+
+}
+
+header #about a:hover {
+	color: #ffffff;
+	border-bottom: 1px solid silver;
+}
+
+
+header #ourjob {
+	width: 20%;
+	float: left;
+
+}
+
+header #ourjob a {
+	color: #ffb14d;
+	font-size: 2.5em;
+
+}
+
+header #ourjob a:hover {
+	color: #ffffff;
+	border-bottom: 1px solid silver;
+}
+
+header #info {
+	width: 19%;
+	float: left;
+
+}
+
+header #info a {
+	color: #ffb14d;
+	font-size: 2.5em;
+
+}
+
+header #info a:hover {
+	color: #ffffff;
+	border-bottom: 1px solid silver;
+}
+
+header #contact {
+	float: left;
+
+}
+
+header #contact a {
+	color: #ffb14d;
+	font-size: 2.5em;
+
+}
+
+header #contact a:hover {
+	color: #ffffff;
+	border-bottom: 1px solid silver;
+}
+
+header #feedback {
+	width: 20%;
+	float: right;
+	text-align: right;
+}
+
+header #feedback a {
+	color: #939393;
+	font-size: 2.5em;
+
+}
+header #feedback a:hover {
+	color: #dfdfdf;
+	border-bottom: 1px solid silver;
+}
+
+header #feedback span {
+	color: #e36565
+}
+
+nav {
+	width: 80.2%;
+	padding: 25px 9.9%;
+	border-bottom: 2px solid #ebebeb;
+	background-color: #174e95;
+}
+
+nav a {
+	color: #323232;
+	font-size: 1.5em;
+	margin-left: 8%;
+}
+
+nav a:hover {
+	color: #e8622d;
+}
+
+.fixed:hover {
+	opacity: 1;
+
+}
+
+.fixed {
+	position: fixed;
+	top: 0;
+	opacity: 0.97;
+	padding: 4px 10%;
+}
+
+.fixed a {
+	font-size: 1.3em;
+}
+
+.fixed #search {
+	font-size: 1.2em;
+}
+
+#hideMenu>a {
+	color: #dadada;
+	font-size: 1.1em;
+}
+#hideMenu>a:hover {
+	border-bottom: 1px solid #42c0ca;
+}
+
+
+#hideMenu {
+	display: inline;
+}
+
+#menuShow {
+	display: inline;
+	font-size: 1.4em;
+	margin-left: 20px;
+	float: left;
+	margin-top: 4px;
+	cursor: pointer;
+
+}
+
+#mobileMenu {
+	display: none;
+	width: 100%;
+	float: left;
+}
+#mobileMenu>a {
+	color: #323232;
+	font-size: 1.5em;
+	margin-left: 8%;
+}
+
+#mobileMenu>a:hover {
+	color: #868686;
+}
+
+
+
+
+@media (min-width: 785px){
+	#menuShow {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+@media (max-width: 784px) {
+	#hideMenu {
+		display: none;
+		visibility: hidden;
+	}
+}
+
+
+
+
+#search {
+	float: right;
+	cursor: pointer;
+	font-size: 2em;
+	color: #dadada;
+}
+
+
+		/* Стили для всего документа */
+
+#wrapper {
+	display: flex;
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+
+
+}
+
+#slider {
+	width: 99.7%;
+	height: 100%;
+}
+#key {
+	width: 90%;
+	margin-left: 10%;
+	font-size: 50px;
+}
+#list {
+	color: #2c8ca6;h
+	margin-left: 12%;
+	padding: 3%;
+}
+#us {
+	border-bottom: 5px solid #2c8ca6;
+
+}
+
+
+#word {
+	color: #000;
+	font-size: 30px;
+}
+
+#hehoMenu {
+	width: 80.2%;
+	padding: 25px 9.9%;
+	border-bottom: 2px solid #ebebeb;
+	background-color: #174e95;
+}
+
+#hihoMenu {
+	background-color: #0a9dab;
+	width: 84%;
+	padding: 150px;
+
+}
+
+#nas {
+	font-size: 35px;
+	color: white;
+	position: absolute;
+	left:2%;
+	margin-top: 1%;
+}
+
+#rabota {
+	color: white;
+}
+#word1 {
+	color: #000;
+	font-size: 20px;
+}
+
+
+
+
+
+#wrapper #text_main {
+	width: 50%;
+	font-family: "Times New Roman", sans-serif;
+	padding: 1%;
+	margin-left: 10%;
+	font-size: 1.5em;
+
+}
+
+#wrapper #text_main span {
+	color: #e36565
+}
+#wrapper #text_main {
+	background-color: #f6f6f6;
+	width: 55.4%;
+	margin-left: 7%;
+}
+		/*Стили для левой колонки*/
+#wrapper #leftCol {
+	width: 70%;
+	margin-right: 10%;
+	float: left;
+
+}
+
+
+
+#wrapper #leftCol #bigArticle {
+	width: 80%;
+	margin-left: 10%;
+	background-color: #f6f6f6;
+	padding: 1%;
+	float: left;
+}
+
+#wrapper #leftCol #bigArticle img, #wrapper #leftCol .article img {
+	width: 97%;
+	float: left;
+	margin-bottom: 10px;
+}
+
+#wrapper #leftCol #bigArticle h2, #wrapper #leftCol .article h2 {
+	font-weight:normal;
+	font-size: 1.4em;
+	color: #636363;
+	font-family: Comic Sans MS, sans-serif;
+}
+
+#wrapper #leftCol #bigArticle p,  #wrapper #leftCol .article p{
+	width: 90%;
+	margin-left: 5%;
+}
+#wrapper #leftCol #bigArticle div.more, #wrapper #leftCol .article div.more {
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #878787;
+	color: #ffffff;
+	width: 10%;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#wrapper #leftCol #bigArticle div.more:hover, #wrapper #leftCol .article div.more:hover {
+	background-color: #a2a2a2;
+}
+
+#wrapper #leftCol .article {
+	width: 40%;
+	margin-left: 5%;
+	background-color: #f6f6f6;
+	padding: 1%;
+	float: left;
+}
+
+#wrapper #leftCol .article div.more {
+	width: 20%;
+}
+
+#wrapper #leftCol input {
+	width: 40%;
+	margin-left: 30%;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	color: #f8716c;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+}
+#wrapper #leftCol input:focus, #wrapper #leftCol textarea:focus {
+	border: 2px solid #ffafae;
+}
+
+#wrapper #leftCol input#done:hover {
+	border: 2px solid #fff3a4;
+	cursor: pointer;
+}
+
+#wrapper #leftCol textarea {
+	width: 50%;
+	height:150px;
+	margin-left: 25%;
+	float: left;
+	border-radius: 5px;
+	border: 2px solid silver;
+	padding: 5px;
+	color: #0052f8;
+	margin-bottom: 20px;
+	font-size: 1.2em;
+	resize: none;
+}
+
+#wrapper #leftCol #messageShow {
+	font-size: 1.2em;
+	float: left;
+	color: red;
+	width: 100%;
+	text-align: center;
+}
+
+
+	/*Стили для правой колонки*/
+#wrapper #rightCol {
+	width: 20%;
+	float: right;
+	background-color: #f6f6f6;
+
+}
+
+
+#wrapper #rightCol .banner {
+	width: 100%;
+	float: left;
+	margin-bottom: 10px;
+	border: 2px solid silver;
+	box-sizing: border-box;
+}
+
+
+		/* Стили для странички О нас*/
+
+#wrapper #leftCol #about {
+	width: 76%;
+	margin-left: 10%;
+	border: 1px solid silver;
+	background-color: #f4f4f4;
+	padding: 2%;
+	font-family: "Times New Roman", sans-serif;
+}
+
+#wrapper #leftCol img {
+	width: 50%;
+	float: left;
+	margin-bottom: 10px;
+	padding: 10px;
+
+}
+#wrapper #leftCol span {
+	color: #e36565
+}
+
+#wrapper #text1{
+	color: #885d60;
+}
+
+
+		/* стили для Футера */
+
+footer {
+	width: 98%;
+	float: left;
+	padding: 1%;
+	background-color: #fafafa;
+	border-top: 2px solid silver;
+	margin-top: 10px;
+	font-family: Serif;
+}
+
+#site_name {
+	width: 95%;
+	color: #959595;
+	font-size: 1.5em;
+	text-align: center;
+
+}
+
+#metrofoot {
+	text-align: left;
+	font-size: 0.9em;
+	font-family: 'Cormorant SC', serif;
+	float: left;
+	width: 85%;
+}
+
+#phonesfoot {
+	float: left;
+	font-size: 1.2em;
+	font-family: 'Cormorant SC', serif;
+}
+
+#trubka2 {
+	font-size: 2.5em;
+	color: green;
+	float: left;
+	margin-right: 0.5%;
+}
+footer #social {
+	float: right;
+	width: 25%;
+	margin-top: 10px;
+}
+
+#social>a {
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	background-color:  rgba(217, 91, 72, 1);
+	margin-left: 2%;
+	width: 30px;
+	height: 30px;
+	float: right;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	font-size: 1.2em;
+
+}
+
+#social>a:hover {
+	background-color: rgba(217, 91, 72, 0.6); ;
+}
+
+@media (max-width: 520px) {
+	#site_name {
+		display: none;
+	}
+
+	#social {
+		width: 100%;
+	}
+}
+@media (max-width: 1080px) {
+	#clear {
+		clear: both;
+	}
+}
+footer #social img {
+	width: 30px;
+	height: 30px;
+	float: left;
+	margin-right: 5px;
+}
